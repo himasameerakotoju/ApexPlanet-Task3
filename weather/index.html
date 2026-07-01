@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Weather Forecast Fusion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="weather-theme sunny">
+    <div class="weather-scene" aria-hidden="true">
+        <div class="sun"></div>
+        <div class="sun-rays"></div>
+        <div class="moon"></div>
+        <div class="cloud cloud-one"></div>
+        <div class="cloud cloud-two"></div>
+        <div class="wind-lines"></div>
+        <div class="mist"></div>
+        <div class="rain"></div>
+        <div class="lightning"></div>
+        <div class="cool-particles"></div>
+        <div class="snow"></div>
+    </div>
+
+    <div class="container">
+        <div class="orb"></div>
+        <h1>🌦 Weather Forecast Fusion</h1>
+        <p id="statusMessage" class="status-message">Enter a city to check the forecast.</p>
+
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" id="city" placeholder="Enter City Name" autocomplete="off">
+                <button id="searchBtn">Search</button>
+            </div>
+
+            <div class="recent-searches-wrap">
+                <h4>Recent Searches</h4>
+                <ul id="recentSearches" aria-label="Recent searches"></ul>
+            </div>
+        </div>
+
+        <button id="locationBtn">📍 Use My Location</button>
+
+        <div id="weather" class="weather-card">
+            <p id="loading" class="loading-text">Ready when you are.</p>
+            <img id="icon" src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather Icon">
+            <h2 id="cityName">City Name</h2>
+            <h1 id="temp">0°C</h1>
+            <h3 id="desc">Weather</h3>
+
+            <div class="details">
+                <div class="box">
+                    <h4>Humidity</h4>
+                    <p id="humidity">0%</p>
+                </div>
+
+                <div class="box">
+                    <h4>Wind</h4>
+                    <p id="wind">0 m/s</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

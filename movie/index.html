@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1><i class="fa-solid fa-film"></i> Movie Search App</h1>
+        <button id="themeToggle" class="theme-btn">
+    🌙 Dark Mode
+</button>
+
+        <!-- Search -->
+        <div class="search-box">
+
+            <input type="text"
+                id="movieInput"
+                placeholder="Search movie...">
+
+            <button id="searchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Search
+            </button>
+
+        </div>
+
+        <!-- Autocomplete -->
+        <div id="suggestions"></div>
+
+        <!-- Filters -->
+        <div class="filters">
+
+            <input
+                type="number"
+                id="year"
+                placeholder="Release Year">
+
+            <select id="type">
+
+                <option value="">All Types</option>
+                <option value="movie">Movie</option>
+                <option value="series">Series</option>
+                <option value="episode">Episode</option>
+
+            </select>
+
+        </div>
+
+        <!-- Loading -->
+        <div id="loading"></div>
+        <div id="message"></div>
+        <h2>
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            Recent Searches
+        </h2>
+
+        <div id="recentSearches"></div>
+
+        <!-- Search Results -->
+        <div id="movieResults"></div>
+
+        <!-- Modal -->
+        <div id="movieModal" class="modal">
+
+            <div class="modal-content">
+
+                <span class="close">&times;</span>
+
+                <div id="modalBody"></div>
+
+            </div>
+
+        </div>
+
+        <!-- Favorites -->
+
+        <h2>❤️ Favorite Movies</h2>
+
+        <div id="favorites"></div>
+
+    </div>
+    <button id="topBtn">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <footer>
+        Made by Hima Sameera Kotoju
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Random User Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>
+            <i class="fa-solid fa-user"></i>
+            Random User Generator
+        </h1>
+
+        <div class="user-card">
+
+            <img id="profilePic"
+                src="https://via.placeholder.com/150"
+                alt="Profile">
+
+            <h2 id="name">
+                Full Name
+            </h2>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                <span id="email">
+                    example@email.com
+                </span>
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                <span id="phone">
+                    +91 9876543210
+                </span>
+            </p>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                <span id="country">
+                    India
+                </span>
+            </p>
+
+        </div>
+
+        <button id="generateBtn">
+
+            <i class="fa-solid fa-arrows-rotate"></i>
+
+            Generate New User
+
+        </button>
+        <div class="buttons">
+
+    <button id="downloadBtn">
+        <i class="fa-solid fa-download"></i>
+        Download vCard
+    </button>
+
+    <button id="saveBtn">
+        <i class="fa-solid fa-bookmark"></i>
+        Save Contact
+    </button>
+
+</div>
+
+<h2>📒 Saved Contacts</h2>
+
+<div id="contactsList"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

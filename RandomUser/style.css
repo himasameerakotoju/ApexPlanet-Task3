@@ -1,0 +1,189 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.container{
+    background:#fff;
+    width:100%;
+    max-width:500px;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+}
+
+h1{
+    margin-bottom:25px;
+    color:#333;
+}
+
+.user-card{
+    background:#f8f9fa;
+    padding:25px;
+    border-radius:15px;
+}
+
+.user-card img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #0d6efd;
+    margin-bottom:20px;
+}
+
+.user-card h2{
+    color:#222;
+    margin-bottom:15px;
+}
+
+.user-card p{
+    margin:12px 0;
+    color:#555;
+    font-size:17px;
+}
+
+.user-card i{
+    color:#0d6efd;
+    margin-right:8px;
+}
+
+button{
+    margin-top:25px;
+    padding:14px 30px;
+    border:none;
+    border-radius:10px;
+    background:#0d6efd;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#084298;
+    transform:translateY(-3px);
+}
+
+@media(max-width:600px){
+
+    .container{
+        padding:20px;
+    }
+
+    h1{
+        font-size:28px;
+    }
+
+    .user-card img{
+        width:120px;
+        height:120px;
+    }
+
+    .user-card p{
+        font-size:15px;
+    }
+
+}
+.buttons{
+    display:flex;
+    gap:10px;
+    margin-top:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+#downloadBtn,
+#saveBtn{
+
+    padding:12px 20px;
+
+    border:none;
+
+    border-radius:10px;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+#downloadBtn{
+
+    background:#198754;
+
+}
+
+#downloadBtn:hover{
+
+    background:#157347;
+
+}
+
+#saveBtn{
+
+    background:#fd7e14;
+
+}
+
+#saveBtn:hover{
+
+    background:#d96b08;
+
+}
+
+#contactsList{
+
+    margin-top:20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.contact-card{
+
+    background:#f8f9fa;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    text-align:left;
+
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+
+}
+
+.contact-card h3{
+
+    color:#0d6efd;
+
+    margin-bottom:8px;
+
+}
+
+.contact-card p{
+
+    margin:5px 0;
+
+}
